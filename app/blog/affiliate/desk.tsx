@@ -10,68 +10,63 @@ export default function Page() {
             昇降デスクを検討、探している人向けにおすすめを紹介します。
             </p>
             
-            { 【在宅ワークが快適】Skyvance 電動昇降デスクをレビュー｜腰痛対策におすすめ
-                
-                在宅ワークや副業で、「ずっと座りっぱなしがきつい…」と感じていませんか？
-                
-                そんな方におすすめなのが、**電動昇降デスク**です。
-                
-                今回紹介するのは、
-                
-                - *Skyvance 電動昇降デスク（120×60cm）**です。
-                
-                👉 [Amazonで詳細を見る](https://amzn.to/4mHnlFJ)
-                                  
-                                  ---
-                                  
-                                  ## ✔ 特徴まとめ
-                                  
-                                  - 高さ調整：65cm〜110cm（座り・立ち両対応）
-                                  - メモリー機能：3つ登録可能
-                                  - 静音設計：約45dB（かなり静か）
-                                  - 耐荷重：80kg（PC＋モニターも余裕）
-                                  - 天板：一枚板風で高級感あり
-                                  
-                                  ---
-                                  
-                                  ## ✔ 実際に使うとこんなメリット
-                                  
-                                  ### ① 腰・肩の負担が軽減
-                                  
-                                  長時間座る時間を立つ時間に切り替えるだけで、かなり楽になります。
-                                  
-                                  ### ② 作業効率が上がる
-                                  
-                                  立つことで眠気が減り、集中力も上がります。
-                                  
-                                  ### ③ ワンタッチで高さ変更
-                                  
-                                  ボタン一つで自動昇降できるので、地味に便利です。
-                                  
-                                  ---
-                                  
-                                  ## ✔ こんな人におすすめ
-                                  
-                                  - 在宅ワークをしている人
-                                  - 副業でPC作業が多い人
-                                  - 腰痛・肩こりに悩んでいる人
-                                  - 作業効率を上げたい人
-                                  
-                                  ---
-                                  
-                                  ## ✔ デメリット
-                                  
-                                  - 初期費用がやや高め
-                                  - 組み立てが少し大変（1人でも可能）
-                                  
-                                  ---
-                                  
-                                  ## ✔ まとめ
-                                  
-                                  「作業環境を変えたい」「体の負担を減らしたい」という方には、かなりおすすめです。
-                                  
-                                  👉 [Skyvance 電動昇降デスクをAmazonで見る](https://amzn.to/4mHnlFJ)}
-            
-            </main>
-            )
+            export default function Page() {
+                return (
+                        <main className="max-w-3xl mx-auto p-6">
+                        
+                        <h1 className="text-3xl font-bold">
+                        おすすめの昇降デスク
+                        </h1>
+                        
+                        <p className="mt-2 text-gray-600">
+                        昇降デスクを検討している人向けにおすすめを紹介します。
+                        </p>
+                        
+                        <h2 className="mt-8 font-bold">
+                        【在宅ワークが快適】Skyvance 電動昇降デスクをレビュー
+                        </h2>
+                        
+                        <p className="mt-4">
+                        在宅ワークや副業で、「ずっと座りっぱなしがきつい…」と感じていませんか？
+                        </p>
+                        
+                        <p className="mt-2">
+                        そんな方におすすめなのが、電動昇降デスクです。
+                        </p>
+                        
+                        <p className="mt-2">
+                        今回紹介するのは Skyvance 電動昇降デスク（120×60cm）です。
+                        </p>
+                        
+                        <a href="https://amzn.to/4mHnlFJ" className="text-blue-500 underline block mt-4">
+                        👉 Amazonで詳細を見る
+                        </a>
+                        
+                        <h2 className="mt-8 font-bold">特徴まとめ</h2>
+                        <ul className="list-disc ml-5 mt-2">
+                        <li>高さ調整：65cm〜110cm</li>
+                        <li>メモリー機能あり</li>
+                        <li>静音設計</li>
+                        <li>耐荷重80kg</li>
+                        </ul>
+                        
+                        <h2 className="mt-8 font-bold">メリット</h2>
+                        <ul className="list-disc ml-5 mt-2">
+                        <li>腰・肩の負担軽減</li>
+                        <li>作業効率アップ</li>
+                        <li>ワンタッチ昇降</li>
+                        </ul>
+                        
+                        <h2 className="mt-8 font-bold">まとめ</h2>
+                        <p className="mt-2">
+                        作業環境を改善したい人におすすめです。
+                        </p>
+                        
+                        <a href="https://amzn.to/4mHnlFJ" className="block bg-blue-500 text-white text-center p-3 rounded-xl mt-6">
+                        👉 Amazonでチェック
+                        </a>
+                        
+                        </main>
+                        )
+            }
 }
