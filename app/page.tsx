@@ -28,13 +28,18 @@ export default function Home() {
             </div>
             
             {/* 記事 */}
-            <h2 className="mt-10 text-2xl font-bold">おすすめ記事</h2>
+            <h2 className="mt-10 text-2xl font-bold">おすすめ集</h2>
             
             <div className="grid md:grid-cols-2 gap-6 mt-4">
             
             <a href="/blog/recommend-books" className="p-4 border rounded-xl shadow hover:shadow-lg">
             <h3 className="font-bold">読書管理アプリおすすめ</h3>
             <p className="text-gray-600">効率よく本を管理する方法</p>
+            </a>
+            
+            <a href="/blog/affiliate" className="p-4 border rounded-xl shadow hover:shadow-lg">
+            <h3 className="font-bold">おすすめ昇降デスク</h3>
+            <p className="text-gray-600">効率仕事、作業するお助けアイテム</p>
             </a>
             
             </div>
