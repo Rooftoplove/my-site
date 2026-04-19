@@ -1,5 +1,5 @@
 export default async function Home() {
-    const res = await fetch('https://asublog.microcms.io/api/blog', {
+    const res = await fetch('https://asublog.microcms.io/api/v1/blog', {
         headers: {
             'X-MICROCMS-API-KEY': process.env.MICROCMS_API_KEY!,
         },
