@@ -1,7 +1,7 @@
 export default async function Page({
     params,
 }: {
-    params: { id: string }
+    params: { slug: string }
 }) {
     const res = await fetch(
                             `https://asublog.microcms.io/api/v1/blog/${params.slug}`,
