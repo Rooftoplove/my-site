@@ -16,8 +16,8 @@ export default function Page() {
             </ul>
             
             <a
-            href="#"
-            className="block bg-blue-500 text-white text-center p-3 rounded-xl mt-6"
+            href="https://apps.apple.com/jp/app/%E3%82%88%E3%82%93%E3%81%A0/id6760612962"
+            className="block bg-blue-500 text-white text-center p-3 rounded-xl mt-4"
             >
             App Storeでダウンロード
             </a>
