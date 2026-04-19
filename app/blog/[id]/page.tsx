@@ -28,7 +28,7 @@ export default async function Page({
             
             <div
             className="mt-6 leading-relaxed"
-            dangerouslySetInnerHTML={{ __html: post.content }}
+            dangerouslySetInnerHTML={{ __html: post.content ?? '',}}
             />
             
             </main>
