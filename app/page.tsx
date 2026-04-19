@@ -37,7 +37,7 @@ export default async function Home() {
             </div>
             
             {/* 記事 */}
-            <h1 className="text-3xl font-bold">記事一覧</h1>
+            <h2 className="text-3xl font-bold">記事一覧</h2>
             
             <div className="grid md:grid-cols-2 gap-6 mt-6">
             

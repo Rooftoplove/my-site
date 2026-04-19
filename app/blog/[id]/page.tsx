@@ -23,7 +23,7 @@ export default async function Page({
             </h1>
             
             <p className="text-gray-500 mt-2">
-            {post.publishedAt}
+            {post.slug}
             </p>
             
             <div
