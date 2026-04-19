@@ -3,7 +3,6 @@ export default async function Page({
 }: {
     params: { id: string }
 }) {
-    console.log(params.id)
     const res = await fetch(
                             `https://asublog.microcms.io/api/v1/blog/${params.id}`,
                             {
