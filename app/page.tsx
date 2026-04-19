@@ -49,7 +49,7 @@ export default async function Home() {
                                                >
                                                <h2 className="font-bold">{post.title}</h2>
                                                <p className="text-gray-600 mt-1">
-                                               {post.content.replace(/<[^>]*>/g, '').slice(0, 60)}...
+                                               {(post.content ?? post.body ?? ' ').replace(/<[^>]*>/g, '').slice(0, 60)}...
                                                </p>
                                                </a>
                                                ))}
