@@ -44,7 +44,7 @@ export default async function Home() {
             {data.contents.map((post: any) => (
                                                <a
                                                key={post.id}
-                                               href={`/blog/${post.slug}`}
+                                               href={`/blog/${post.id}`}
                                                className="p-4 border rounded-xl hover:shadow-lg"
                                                >
                                                <h2 className="font-bold">{post.title}</h2>
