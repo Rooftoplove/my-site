@@ -1,4 +1,13 @@
-export default function Home() {
+export default async function Home() {
+    const res = await fetch('https://asublog.microcms.io/api/blog', {
+        headers: {
+            'X-MICROCMS-API-KEY': process.env.MICROCMS_API_KEY!,
+        },
+        cache: 'no-store',
+    })
+    
+    const data = await res.json()
+    
     return (
             <main className="max-w-5xl mx-auto p-6">
             
@@ -28,19 +37,22 @@ export default function Home() {
             </div>
             
             {/* 記事 */}
-            <h2 className="mt-10 text-2xl font-bold">おすすめ集</h2>
+            <h1 className="text-3xl font-bold">記事一覧</h1>
             
-            <div className="grid md:grid-cols-2 gap-6 mt-4">
+            <div className="grid md:grid-cols-2 gap-6 mt-6">
             
-            <a href="/blog/recommend-books" className="p-4 border rounded-xl shadow hover:shadow-lg">
-            <h3 className="font-bold">読書管理アプリおすすめ</h3>
-            <p className="text-gray-600">効率よく本を管理する方法</p>
-            </a>
-            
-            <a href="/blog/affiliate" className="p-4 border rounded-xl shadow hover:shadow-lg">
-            <h3 className="font-bold">おすすめ昇降デスク</h3>
-            <p className="text-gray-600">効率仕事、作業するお助けアイテム</p>
-            </a>
+            {data.contents.map((post: any) => (
+                                               <a
+                                               key={post.id}
+                                               href={`/blog/${post.slug}`}
+                                               className="p-4 border rounded-xl hover:shadow-lg"
+                                               >
+                                               <h2 className="font-bold">{post.title}</h2>
+                                               <p className="text-gray-600 mt-1">
+                                               {post.content.replace(/<[^>]*>/g, '').slice(0, 60)}...
+                                               </p>
+                                               </a>
+                                               ))}
             
             </div>
             
