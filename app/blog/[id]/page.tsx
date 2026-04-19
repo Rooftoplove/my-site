@@ -3,6 +3,7 @@ export default async function Page({
 }: {
     params: { id: string }
 }) {
+    console.log(params.id)
     const res = await fetch(
                             `https://asublog.microcms.io/api/v1/blog/${params.id}`,
                             {
@@ -23,7 +24,7 @@ export default async function Page({
             </h1>
             
             <p className="text-gray-500 mt-2">
-            {post.slug}
+            {post.slug ?? 'no slug'}
             </p>
             
             <div
