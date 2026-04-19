@@ -1,16 +1,4 @@
 export default function Page() {
-    return (
-            <main className="max-w-3xl mx-auto p-6">
-            
-            <h1 className="text-3xl font-bold">
-            おすすめの昇降デスク
-            </h1>
-            
-            <p className="mt-2 text-gray-600">
-            昇降デスクを検討、探している人向けにおすすめを紹介します。
-            </p>
-            
-            export default function Page() {
                 return (
                         <main className="max-w-3xl mx-auto p-6">
                         
@@ -69,4 +57,3 @@ export default function Page() {
                         </main>
                         )
             }
-}
