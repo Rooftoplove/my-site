@@ -4,7 +4,7 @@ export default async function Page({
     params: { id: string }
 }) {
     const res = await fetch(
-                            `https://asublog.microcms.io/api/v1/blog/${contentid}`,
+                            `https://asublog.microcms.io/api/v1/blog/${params.id}`,
                             {
                                 headers: {
                                     'X-MICROCMS-API-KEY': process.env.MICROCMS_API_KEY!,
