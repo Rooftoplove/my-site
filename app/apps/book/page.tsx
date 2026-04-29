@@ -20,15 +20,15 @@ export default function Page() {
             <ul className="list-disc ml-5 mt-2">
             <li>簡単入力で続けやすい</li>
             <li>カテゴリごとに管理できる</li>
-            <li>グラフで支出が一目で分かる</li>
+            <li>読書記録を視覚化（有料機能）</li>
             </ul>
             
             {/* 使うメリット追加 */}
             <h2 className="mt-8 font-bold">こんな人におすすめ</h2>
             <ul className="list-disc ml-5 mt-2">
-            <li>家計簿が続かない人</li>
-            <li>お金をしっかり管理したい人</li>
-            <li>節約したい人</li>
+            <li>購入した本が多くて管理できていない方</li>
+            <li>年間、月間の読了数をカウントしたい方</li>
+            <li>１冊の読書期間を視覚化したい方</li>
             </ul>
             
             {/* CTA②（中間） */}
