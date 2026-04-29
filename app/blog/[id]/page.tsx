@@ -5,9 +5,6 @@ export default async function Page({
 }) {
     const contentId = params.id;
     
-    // テスト
-    console.log("API KEY:", process.env.MICROCMS_API_KEY);
-    
     const res = await fetch(
                             `https://asublog.microcms.io/api/v1/blog/${contentId}`,
                             {
