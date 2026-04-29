@@ -15,41 +15,31 @@ export default async function Page({
                             }
                             );
     
-    // 👇 これ追加
+    // 👇 ここ超重要
     if (!res.ok) {
         const text = await res.text();
         console.error("API ERROR:", res.status, text);
-        throw new Error(`Fetch failed: ${res.status}`);
+        
+        return (
+                <div>
+                エラー発生: {res.status}
+                <pre>{text}</pre>
+                </div>
+                );
     }
     
-    // 👇 ここも安全に
     const text = await res.text();
     
     if (!text) {
-        throw new Error("Empty response");
+        return <div>レスポンスが空です</div>;
     }
     
     const post = JSON.parse(text);
     
-    // 👇 null対策
-    if (!post) {
-        return <div>データなし</div>;
-    }
-    
     return (
             <main className="max-w-3xl mx-auto p-6">
-            <h1 className="text-3xl font-bold">
-            {post.title ?? 'タイトルなし'}
-            </h1>
-            
-            <p className="text-gray-500 mt-2">
-            {post.slug ?? 'no slug'}
-            </p>
-            
-            <div
-            className="mt-6 leading-relaxed"
-            dangerouslySetInnerHTML={{ __html: post.content ?? '' }}
-            />
+            <h1>{post.title ?? 'タイトルなし'}</h1>
+            <div dangerouslySetInnerHTML={{ __html: post.content ?? '' }} />
             </main>
             );
 }
