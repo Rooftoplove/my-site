@@ -3,7 +3,7 @@ export default async function Page({
 }: {
     params: { id: string }
 }) {
-    const contentIdn = params.id;
+    const contentId= params.id;
     
     
     const res = await fetch(
