@@ -6,7 +6,13 @@ export default async function Page({
     const contentId = params.id;
     
     const res = await fetch(
-                            `https://asublog.microcms.io/api/v1/blog/${contentId}`,
+                            `https://asublog.microcms.io/api/v1/blog/{contentId}`,
+                            {
+                                headers: {
+                                    'X-MICROCMS-API-KEY': process.env.MICROCMS_API_KEY!,
+                                },
+                                cache: 'no-store',
+                            }
                             );
     
     // 👇 ここ超重要
