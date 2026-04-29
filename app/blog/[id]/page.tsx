@@ -9,7 +9,7 @@ export default async function Page({
                             `https://asublog.microcms.io/api/v1/blog/{contentId}`,
                             {
                                 headers: {
-                                    'MICROCMS-API-KEY': process.env.MICROCMS_API_KEY!,
+                                    'X-MICROCMS-API-KEY': process.env.MICROCMS_API_KEY!,
                                 },
                                 cache: 'no-store',
                             }
